@@ -15,7 +15,7 @@ Tabletové verze - šířka 500px až 1000px
 - v galerii jsou vždy 2 obrázky vedle sebe (obrázků je 9, zbyde ti na konci jeden prázdný obdélníček)
 - popisky k obrázkům v textu jsou uvnitř obrázku blízko k jeho pravému dolnímu rohu
 - popisky k obrázkům v galerii jsou skryté a vyjíždějí při najetí myši
-
+ 
 
 Počítačová verze - šířka nad 1000px
 =======================================

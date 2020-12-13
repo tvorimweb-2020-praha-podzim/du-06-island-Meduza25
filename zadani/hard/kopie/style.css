@@ -1,0 +1,335 @@
+body {
+    margin: auto;
+    background-color: #f5f5f5;
+    font-family: Merriweather, serif;
+    line-height: 1.5;  
+}
+
+.nazev {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.zahlavi {
+    background-image: url(images/island-hlavicka.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(images/island-hlavicka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.uvodnik {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+
+.jmeno {
+    margin: 0;
+    font-style: italic;
+    position: relative;
+}
+
+.jmeno::before {
+    content: '';
+    background: white;
+    height: 1px;
+    width: 80px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -18px;
+}
+
+.navigace {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+}
+
+.polozka {
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.polozka a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(201, 201, 201);
+}
+
+.texty {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.podnazev {
+    padding-left: 1rem;
+    font-family: Raleway, serif;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.podnazev::after {
+    content: '';
+    background: #629edb;
+    height: 6px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+}
+
+.popisek {
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.popisek a {
+    color: rgb(201, 201, 201);
+}
+
+.fotonazev {
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.misto {
+    font-weight: bold;
+}
+
+.zaver {
+    font-size: .7rem;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: rgb(240, 240, 240);
+    color: rgb(180, 180, 180);
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+}
+
+.zaver a {
+    color: rgb(180, 180, 180);
+}
+
+.zaver p {
+    margin: 0;
+}
+
+.fig {
+    margin: 0;
+}
+
+@media screen and (min-width: 670px) {
+    
+    .zahlavi {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .polozky {
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid rgb(201, 201, 201);
+        border-bottom: 1px solid rgb(201, 201, 201);
+        font-size: 0.8rem;
+    }
+
+    .polozka {
+        flex: 1;
+        border-bottom: none;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        border-right: 1px solid rgb(201, 201, 201);
+    }
+
+    .zvlastni {
+        border-right: none;
+    }
+
+    .navigace {
+        margin-top: 2rem;
+    }
+
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galerfoto {
+        line-height: 0;
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a86;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+
+    .galerfoto:hover .overlay {
+        height: 30%;
+    }
+
+    .fotonazev {
+        color: white;
+        font-size: .7rem;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .popisek2 {
+        color: white;
+        font-size: .7rem;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .galerfoto.foto {
+        transition: transform 1s ease-in;
+    }
+
+    .galerfoto:hover .foto {
+        transform: scale(1.2);
+    }
+
+    .fig {
+        position: relative;
+        margin: 0;
+    }
+
+    .popisek1 {
+        position: absolute;
+        bottom: .5rem;
+        right: 1rem;
+        color: white;
+    }
+
+    .popisek1 a {
+        color: white;
+    }
+
+    .vpravo2 {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .zahlavi {
+        padding-bottom: 7rem;
+        padding-top: 2.5rem;
+    }
+
+    .uvodnik {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .vnitrek {
+        overflow: hidden;
+        max-width: 960px;
+        margin: auto;
+        background-color:#f5f5f5;
+        position: relative;
+        top: -90px;
+        box-shadow: rgb(145, 143, 143) 1px 1px 10px;
+    }
+
+    body {
+        background-color: rgb(240, 240, 240);
+    }
+
+    .zaver {
+        box-shadow: none;
+        position: relative;
+        top: -45px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .galerfoto {
+        width: calc(100%/3);
+    }
+
+    .fotonazev,
+    .popisek2 {
+        font-size: .7rem;
+    }
+
+    .texty {
+        width: 70%;
+        padding-left: 2rem;
+    }
+
+    .podnazev {
+        padding-left: 2rem;
+    }
+
+    .polozky {
+        display: block;
+        border: none;
+    }
+
+    .polozka {
+        border: none;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        text-align: left;
+    }
+    
+    .obal {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigace {
+        margin-top: .2rem;
+    }
+
+    .vpravo {
+        position: relative;
+        left: 14rem;
+    }
+
+    .vpravo2 {
+        margin-top: 2rem;
+    }
+
+}
